@@ -1,0 +1,149 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: darkgray;
+}
+
+/*navbar*/
+#navigation {
+    width: 100%;
+    background-color: darkred;
+    margin: 0;
+    text-align: center;
+    list-style: none;
+}
+
+    #navigation li {
+        display: inline;
+        padding-right: 70px;
+        font-size: 20px;
+        text-decoration: underline;
+        color: yellow;
+    }
+
+    #navigation a:hover {
+        background-color: red;
+        color: white;
+    }
+
+a:visited {
+    color: white;
+}
+
+/*when the screen is too small, the navbar will stack the links and 
+    at the top of the screen
+*/
+
+@media screen and (max-width: 600px) {
+
+    #navigation > li {
+        display: block;
+        font-size: 12px;
+        padding: 0;
+    }
+
+        #navigation > li:hover {
+            background-color: red;
+        }
+
+    #navigation {
+        text-align: center;
+        padding-left: 0;
+        padding-bottom: 2px;
+    }
+}
+
+/*the page is split into multiple pages*/
+.page {
+    width: 100%;
+    box-sizing: border-box;
+    color: black;
+    background-color: white;
+    padding: 20px;
+    margin: 0;
+}
+
+/*the header*/
+#header {
+    background-color: goldenrod;
+    color: dimgrey;
+    font: bold 40px "Times New Roman", times, serif;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid black;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    text-align: center;
+    font: bold 25px 'Times New Roman', Times, serif;
+    text-decoration: underline;
+}
+
+/*the information section*/
+#information {
+    background-color: darkkhaki;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    border: 5px solid black;
+    padding-bottom: 5px;
+}
+
+#linkedin:visited {
+    color: red;
+}
+
+/*the padding for the text in the sections*/
+#information > p, #education > p, #classes > ul, #skills > ul {
+    padding-left: 20%;
+}
+
+/*the education section*/
+#education {
+    background-color: darkred;
+    color: white;
+    border: 5px solid black;
+    padding: 5px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#edu-heads {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/*the classes section*/
+#classes {
+    background-color: darkblue;
+    color: white;
+    border: 5px solid black;
+    width: 100%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*the skills section*/
+#skills {
+    background-color: darkcyan;
+    color: white;
+    border: 5px solid black;
+    padding: 5px;
+}
+
+li {
+    line-height: 1.5em;
+}
+
+/*the footer section*/
+#footer {
+    text-align: center;
+    color: gold;
+    background-color: darkgreen;
+    width: 100%;
+    height: 20px;
+    border-top: 2px solid black;
+    bottom: 0;
+}

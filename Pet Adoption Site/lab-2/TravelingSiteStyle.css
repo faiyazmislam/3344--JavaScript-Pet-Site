@@ -1,0 +1,302 @@
+﻿body {
+    margin: 0px;
+    padding: 0px;
+    background: black;
+}
+
+/*NAVIGATION CODE*/
+
+#navigation {
+    position: fixed;
+    width: 100%;
+    background-color: darkred;
+    margin: 0;
+    text-align: center;
+    list-style: none;
+}
+
+    #navigation li {
+        display: inline;
+        padding-right: 70px;
+        font-size: 20px;
+        text-decoration: underline;
+        color: yellow;
+    }
+
+a:hover {
+    background-color: red;
+}
+
+a:visited {
+    color: yellow;
+}
+
+/*when the screen is too small, the navbar will stack the links and remain in a fixed position
+    at the top of the screen
+*/
+
+@media screen and (max-width: 600px) {
+
+    #navigation > li {
+        display: block;
+        font-size: 12px;
+        padding: 0;
+    }
+
+    li:hover {
+        background-color: red;
+    }
+
+    #navigation {
+        text-align: center;
+        padding-left: 0;
+        padding-bottom: 2px;
+    }
+}
+
+/*PAGE CODE
+    the style that applies to all pages here
+*/
+
+.page {
+    width: 100%;
+    box-sizing: border-box;
+    color: white;
+    overflow: auto;
+    padding: 30px;
+    margin: auto;
+}
+
+/*LANDING PAGE CODE*/
+
+.landing-text {
+    margin-left: 15%;
+    margin-right: 15%;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.landing-header {
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 16px;
+    text-shadow: 3px 3px red;
+    text-align: center;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    width: 100%;
+    height: 200px;
+    background-image: url(images/space.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#landing-title {
+    text-decoration: underline;
+}
+
+/*when the screen is too small, the header will become smaller to accomodate the screen size*/
+@media screen and (max-width: 600px) {
+
+    .landing-header {
+        padding-top: 30px;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        font-size: 12px;
+    }
+
+    .landing-text {
+        font-size: 14px;
+    }
+}
+
+/*INFORMATIONAL PAGE CODE*/
+
+.caption {
+    font-size: 14px;
+    text-align: center;
+    font-style: italic;
+}
+
+.section-rightside {
+    font-size: 14px;
+}
+
+#air-travel {
+    font-weight: bold;
+    text-decoration: underline;
+    color: gold;
+}
+
+#air-text {
+    background-color: darkblue;
+    color: gold;
+}
+
+#land-travel {
+    font-weight: bold;
+    text-decoration: underline;
+    color: lawngreen;
+}
+
+#land-text {
+    background-color: darkred;
+    color: lawngreen;
+}
+
+#space-travel {
+    font-weight: bold;
+    text-decoration: underline;
+    color: aqua;
+}
+
+#space-text {
+    background-color: indigo;
+    color: aqua;
+}
+
+/*the clear sections are used to remove floating*/
+.clear {
+    clear: both;
+}
+
+/*when the screen is big enough, the image of the leftside will move to the left
+    the text will move to the right, the image and text stack on top of each other by default
+*/
+@media screen and (min-width: 700px) {
+
+    .section-leftside {
+        float: left;
+        width: 40%;
+        margin-right: 2%;
+        margin-left: 2%;
+    }
+
+    .caption {
+        font-size: 14px;
+        font-style: italic;
+        margin-left: 15%;
+    }
+
+    .section-leftside > img {
+        float: right;
+    }
+
+    .section-rightside {
+        float: left;
+        width: 40%;
+    }
+}
+
+/*FORM PAGE CODE*/
+
+#form-page {
+    color: aquamarine;
+    width: 100%;
+    margin-left: 5%;
+    border: 3px dashed;
+    border-color: indigo;
+    max-width: 90%;
+}
+
+#form-heading {
+    text-align: center;
+    font-size: 20px;
+    color: lawngreen;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: underline;
+}
+
+.submit-btn {
+    text-align: center;
+}
+
+input[type=submit] {
+    background-color: purple;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#question {
+    font-size: 16px;
+    color: violet;
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+}
+
+/*when the screen is big enough, the left of the form goes left
+    the right of the form goes to the right
+    the form halves stack on top each other by default
+*/
+@media screen and (min-width: 700px) {
+
+    .form-left {
+        float: left;
+        width: 40%;
+        margin-left: 15%;
+    }
+
+    .form-right {
+        float: left;
+        width: 40%;
+    }
+}
+
+/*PHOTO GALLERY CODE*/
+
+#photo-gallery {
+    padding: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+#gallery-title {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.column {
+    padding-left: 10%;
+    padding-right: 4%;
+    padding-bottom: 24px;
+    box-sizing: border-box;
+    text-decoration: underline;
+    color: deeppink;
+}
+
+/* the floating after each row is removed */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+    color: white;
+}
+
+/*the images stack on top one another on default
+    when the screen is big enough, the images float to the left
+*/
+@media screen and (min-width: 700px) {
+
+    .column {
+        float: left;
+        width: 30%;
+    }
+}
+
+/*FOOTER*/
+
+footer {
+    text-align: center;
+    font-size: 15px;
+    background-color: darkblue;
+    color: white;
+    font-style: italic;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

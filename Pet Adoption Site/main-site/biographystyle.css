@@ -1,0 +1,216 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*the navbar*/
+#navigation {
+    width: 100%;
+    background-color: darkred;
+    margin: 0;
+    text-align: center;
+    list-style: none;
+}
+
+    #navigation li {
+        display: inline;
+        padding-right: 70px;
+        font-size: 20px;
+        text-decoration: underline;
+        color: yellow;
+    }
+
+a:hover {
+    background-color: red;
+}
+
+a:visited {
+    color: white;
+}
+
+/*when the screen is too small, the navbar will stack the links and 
+    at the top of the screen
+*/
+
+@media screen and (max-width: 600px) {
+
+    #navigation > li {
+        display: block;
+        font-size: 12px;
+        padding: 0;
+    }
+
+    li:hover {
+        background-color: red;
+    }
+
+    #navigation {
+        text-align: center;
+        padding-left: 0;
+        padding-bottom: 2px;
+    }
+}
+
+/*the header*/
+#header {
+    background-color: darkslategray;
+    color: chartreuse;
+    font: bold 30px "Times New Roman", times, serif;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid black;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 0;
+    padding: 0;
+}
+
+/*the page is split into sections*/
+.page {
+    width: 100%;
+    box-sizing: border-box;
+    color: black;
+}
+
+/*the text in the personal info section*/
+#personal-info {
+    background-color: teal;
+    color: white;
+    width: 100%;
+    border-bottom: 3px solid black;
+}
+
+h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: underline;
+}
+
+.personal-text {
+    float: left;
+    width: 58%;
+    box-sizing: border-box;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+/*the pictures in the first section*/
+.my-pic {
+    border: 2px solid black;
+    width: 200px;
+    height: 300px;
+    background-image: url(../images/me.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: left;
+    width: 20%;
+    box-sizing: border-box;
+}
+
+.coding-pic {
+    border: 2px solid black;
+    width: 200px;
+    height: 300px;
+    background-image: url(../images/coding.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    float: left;
+    width: 20%;
+}
+
+/*when the screen gets smaller, the images disappear*/
+@media screen and (max-width: 600px) {
+    .my-pic {
+        display: none;
+    }
+
+    .personal-text {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .coding-pic {
+        display: none;
+    }
+}
+/*used to clear floating*/
+.clear {
+    clear: both;
+}
+
+/*the vg section code*/
+#video-games {
+    padding: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    background-color: darkslateblue;
+    color: springgreen;
+    width: 100%;
+    text-decoration: underline;
+    font-style: italic;
+    border-bottom: 3px solid black;
+}
+
+#vg-title {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: underline;
+    text-align: center;
+}
+
+/*the movies section*/
+#movies {
+    background-color: orangered;
+    color: mediumturquoise;
+    width: 100%;
+    border-top: 3px solid black;
+    font: 35px "Times New Roman", times, serif;
+    text-decoration: underline;
+    text-align: center;
+}
+
+#movies-title {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: underline;
+    text-align: center;
+}
+
+/*the columns and rows are used to create image galleries */
+.column {
+    padding-left: 10%;
+    padding-right: 4%;
+    padding-bottom: 24px;
+    box-sizing: border-box;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+    color: white;
+}
+
+/*when the screen gets bigger, the images go side by side, they stack by default*/
+@media screen and (min-width: 700px) {
+
+    .column {
+        float: left;
+        width: 25%;
+    }
+}
+
+/*FOOTER*/
+#footer {
+    text-align: center;
+    color: gold;
+    background-color: darkgreen;
+    width: 100%;
+    height: 20px;
+    border-top: 2px solid black;
+    bottom: 0;
+}

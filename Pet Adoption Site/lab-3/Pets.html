@@ -1,0 +1,109 @@
+﻿<!-- FAIYAZ ISLAM - 3344 - LAB 3 - PET ADOPTION SITE -->
+<!-- Users will be able to enter data about themselves, 
+    choose the animal category they want,
+    and be able to see the animals for adoption when they click the search button.
+    Each animal has a picture, information, and a button for adoption.
+    The user will be able to see the pictures of the animals they choose to adopt.-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Paws&Claws</title>
+    <link href="NewPetStyle.css" rel="stylesheet" />
+    <script src="PetScript.js"></script>
+</head>
+
+<body>
+    <!-- header code -->
+    <div id="header">
+        <h1>PAWS & CLAWS</h1>
+        <h2>Welcome to our shop! Adopt as many animals as you'd like!</h2>
+
+        <h2 style="font-size:14px"><a href="../index.html">Return to Main Site</a></h2>
+    </div>
+
+    <!-- the code for where the adopter can input data about themselves -->
+    <div id="adopterInfo">
+        <br />
+        Adopter's Name:
+        <input id="txtName" type="text" />
+        <br />
+        <br />
+        Adopter's Phone:
+        <input id="txtPhone" type="text" />
+        <br />
+        <br />
+        Adopter's Email:
+        <input id="txtEmail" type="text" />
+        <br />
+        <br />
+        <input id="submitBtn" type="button" value="Submit Info" />
+    </div>
+
+    <!-- this is where some animals are displayed on the site as design -->
+    <div id="site-design" style="text-align:center; margin-top: 10px;">
+
+        <img src="../images/site-cat.jpg" alt="site-cat" class="sitepics" />
+        <img src="../images/site-dog.jpg" alt="site-dog" class="sitepics" />
+        <img src="../images/site-cat.jpg" alt="site-cat" class="sitepics" />
+        <img src="../images/site-dog.jpg" alt="site-dog" class="sitepics" />
+        <img src="../images/site-cat.jpg" alt="site-cat" class="sitepics" />
+        <img src="../images/site-dog.jpg" alt="site-dog" class="sitepics" />
+
+    </div>
+
+    <!-- the section where the user can choose the pet category and click the button to search -->
+    <div id="categorySelection">
+        <br />
+        <br />
+        <br />
+        Select a Category: (Press Search After)
+        <select id="ddlPetCategories">
+            <option value="Birds">Birds</option>
+            <option value="Cats">Cats</option>
+            <option value="Dogs">Dogs</option>
+        </select>
+        <input id="categoryBtn" type="button" value="Search" />
+    </div>
+
+    <!-- the section where the animals will be displayed for adoption -->
+    <div id="petDisplay">
+
+
+    </div>
+
+    <!-- this is where some more animals are displayed on the site as design -->
+    <div id="site-design2" style="text-align:center; margin-top: 30px;">
+
+        <img src="../images/site-bird1.jpg" alt="site-bird1" class="sitepics" />
+        <img src="../images/site-bird2.jpg" alt="site-bird2" class="sitepics" />
+        <img src="../images/site-bird1.jpg" alt="site-bird1" class="sitepics" />
+        <img src="../images/site-bird2.jpg" alt="site-bird2" class="sitepics" />
+        <img src="../images/site-bird1.jpg" alt="site-bird1" class="sitepics" />
+        <img src="../images/site-bird2.jpg" alt="site-bird2" class="sitepics" />
+
+    </div>
+
+    <!-- this is where the adopted animals will be displayed -->
+    <div id="adoptions">
+
+        <div id="adoptionsHead">
+            <h3 id="adoptionHeader">YOUR ADOPTIONS</h3>
+        </div>
+
+        <!-- the list that will contain the animal pics -->
+        <ul id="adoptedList">
+        </ul>
+
+        <!-- submit adoptions -->
+        <input id="submitAdoptionBtn" type="button" value="Submit Adoptions" style="margin-bottom:5px"/>
+    </div>
+
+    
+
+    <!-- footer -->
+    <footer>Faiyaz Islam - Temple University - 2022</footer>
+
+</body>
+</html>

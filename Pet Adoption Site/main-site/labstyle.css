@@ -1,0 +1,187 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*NAVIGATION BAR*/
+.navbar {
+    margin: 0;
+    padding: 0;
+}
+
+#navigation {
+    width: 100%;
+    background-color: darkred;
+    margin: 0;
+    text-align: center;
+    list-style: none;
+}
+
+    #navigation li {
+        display: inline;
+        padding-right: 70px;
+        font-size: 20px;
+        text-decoration: underline;
+        color: yellow;
+    }
+
+a:hover {
+    background-color: red;
+}
+
+a:visited {
+    color: white;
+}
+
+/*when the screen is too small, the navbar will stack the links and
+    at the top of the screen
+*/
+
+@media screen and (max-width: 600px) {
+
+    #navigation > li {
+        display: block;
+        font-size: 12px;
+        padding: 0;
+    }
+
+    li:hover {
+        background-color: red;
+    }
+
+    #navigation {
+        text-align: center;
+        padding-left: 0;
+        padding-bottom: 2px;
+    }
+}
+
+/*HEADER CODE*/
+#header {
+    background-color: coral;
+    color: aquamarine;
+    font: bold 30px "Times New Roman", times, serif;
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid black;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+}
+
+/*CODE FOR THE TABLE*/
+table {
+    width: 100%;
+    font-family: 'Times New Roman', Times, serif
+}
+
+table, th, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+    /*STYLING FOR THE COLUMNS*/
+    th.first-column {
+        width: 10%;
+        background-color: darkred;
+        color: white;
+    }
+
+    td.first-column {
+        text-align: center;
+        background-color: pink;
+        text-decoration: underline;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    th.second-column {
+        width: 10%;
+        background-color: darkgoldenrod;
+        color: white;
+    }
+
+    td.second-column {
+        text-align: center;
+        background-color: lightgoldenrodyellow;
+    }
+
+    th.third-column {
+        width: 40%;
+        background-color: darkgreen;
+        color: white;
+    }
+
+    td.third-column {
+        background-color: lightgreen;
+        padding: 3px;
+    }
+
+    th.last-column {
+        width: 15%;
+        background-color: darkblue;
+        color: white;
+    }
+
+    td.last-column {
+        text-align: center;
+        background-color: lightskyblue;
+        color: black;
+    }
+
+    table a:visited {
+        color: darkblue;
+    }
+
+/*FOOTER*/
+#footer {
+    text-align: center;
+    color: gold;
+    background-color: darkgreen;
+    width: 100%;
+    height: 20px;
+    border-top: 2px solid black;
+    bottom: 0;
+}
+
+
+/*when the screen gets smaller, the columns in each row stack on top of one antoher */
+@media screen and (max-width: 600px) {
+    thead {
+        display: none;
+    }
+
+    td {
+        background-color: seagreen;
+        display: block;
+    }
+
+        /*special pseudo class for putting content before the table data*/
+        td::before {
+            content: attr(data-th) ": ";
+            font-weight: bold;
+            width: 100%;
+            float: left;
+        }
+
+        td.first-column {
+            background-color: darkred;
+            color: white;
+        }
+
+        td.last-column {
+            text-align: center;
+            background-color: darkblue;
+            color: gold;
+        }
+
+    table a:visited {
+        color: gold;
+    }
+}

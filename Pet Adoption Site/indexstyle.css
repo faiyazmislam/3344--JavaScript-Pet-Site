@@ -1,0 +1,232 @@
+﻿body {
+    margin: 0px;
+    padding: 0px;
+    background: black;
+}
+
+/*NAVIGATION CODE*/
+
+#navigation {
+    position: fixed;
+    width: 100%;
+    background-color: darkred;
+    margin: 0;
+    text-align: center;
+    list-style: none;
+}
+
+#navigation li {
+        display: inline;
+        padding-right: 70px;
+        font-size: 20px;
+        text-decoration: underline;
+        color: yellow;
+}
+
+a:hover {
+    background-color: red;
+}
+
+a:visited {
+    color: white;
+}
+
+/*when the screen is too small, the navbar will stack the links 
+    at the top of the screen
+*/
+
+@media screen and (max-width: 600px) {
+
+    #navigation > li {
+        display: block;
+        font-size: 12px;
+        padding: 0;
+    }
+
+    li:hover {
+        background-color: red;
+    }
+
+    #navigation {
+        text-align: center;
+        padding-left: 0;
+        padding-bottom: 2px;
+    }
+}
+
+/*HEADER STYLE*/
+
+.header {
+    background-color: darkgray;
+    color: darkblue;
+    font-size: 40px;
+    font-weight: bold;
+    text-decoration: underline;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    padding-top: 25px;
+}
+
+/*when the screen is too small, the header will become smaller to accomodate the screen size*/
+@media screen and (max-width: 600px) {
+
+    .header {
+        padding-top: 60px;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        font-size: 40px;
+    }
+}
+
+/*the left bar of the page*/
+.leftside {
+    background-color: darkslategray;
+    color: white;
+    width: 25%;
+    height: 550px;
+    float: left; /*floats element out of page, the content after it moves into the area*/
+}
+
+#left-text {
+    color: lightgray;
+}
+
+    #left-text p {
+        padding-left: 10px;
+        line-height: 1.5em;
+    }
+
+/*the middle part of the screen is an image*/
+.middle {
+    color: white;
+    width: 50%;
+    height: 550px;
+    font-family: "Times New Roman", times, serif;
+    text-align: center;
+    font: 40px serif;
+    float: left;
+    background-image: url(images/programmer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/*the right bar of the page*/
+.rightside {
+    background-color: darkslategray;
+    color: white;
+    width: 25%;
+    height: 550px;
+    float: left;
+}
+
+#right-text {
+    color: lightgray;
+}
+
+    #right-text p {
+        padding-left: 10px;
+    }
+
+/*the style of most of the text in the bars*/
+#left-head, #right-head {
+    text-align: center;
+    background-color: orchid;
+    color: darkblue;
+    font-style: italic;
+    font-size: 25px;
+}
+
+h5 {
+    text-decoration: underline;
+    font-size: 16px;
+    padding-left: 10px;
+    line-height: 1em;
+}
+
+h6 {
+    font-size: 16px;
+    padding-left: 10px;
+    line-height: 1em;
+    margin: 0;
+    padding: 0;
+}
+
+a.linkedin {
+    color: yellow;
+}
+
+.linkedin:hover {
+    background-color: white;
+    color: black;
+}
+
+/*FOOTER CODE*/
+#footer {
+    clear: both; /*to prevent floating on both sides, completely*/
+    position: fixed;
+    text-align: center;
+    color: gold;
+    background-color: darkgreen;
+    width: 100%;
+    height: 20px;
+    border-top: 2px solid black;
+    bottom: 0;
+}
+
+/*when the screen gets smaller, the bars change and the image in the middle bar changes*/
+@media screen and (max-width: 600px) {
+
+    .leftside {
+        width: 40%;
+        text-align: center;
+        height: 400px;
+    }
+
+    #left-text p {
+        font-size: 12px;
+        line-height: 1em;
+    }
+
+    .middle {
+        width: 20%;
+        background-color: aquamarine;
+        background-image: url(images/climber.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 400px;
+    }
+
+    .rightside {
+        width: 40%;
+        text-align: center;
+        height: 400px;
+    }
+
+    #right-text p {
+        font-size: 12px;
+    }
+
+    #left-head, #right-head {
+        text-align: center;
+        background-color: orchid;
+        color: darkblue;
+        font-style: italic;
+        font-size: 15px;
+    }
+
+    h5 {
+        text-decoration: underline;
+        font-size: 12px;
+        line-height: 1em;
+    }
+
+    h6 {
+        font-size: 16px;
+        line-height: 1em;
+        margin: 0;
+        padding: 0;
+    }
+}

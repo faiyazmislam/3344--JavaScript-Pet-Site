@@ -1,0 +1,297 @@
+﻿<!--Faiyaz Islam - 3344 - Lab 2 - Responsive Web Page
+In this assignment, a single web page was created consisting of multiple virtual pages within it-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="TravelingSiteStyle.css" rel="stylesheet" />
+    <meta charset="utf-8" />
+    <title>Faiyaz's Universal Transportations</title>
+</head>
+
+<body>
+
+    <!--the code here creates a container that contains the navigation bar for the web page
+    there is a link to the main site and there is a link to each virtual page of the single page-->
+    <div class="navbar">
+
+        <nav>
+            <ul id="navigation">
+                <li><a href="../index.html">Main Site</a></li>
+                <li><a href="#landing">Home</a></li>
+                <li><a href="#informational-page">Information</a></li>
+                <li><a href="#form-page">Reservation Form</a></li>
+                <li><a href="#photo-gallery">Popular Destinations</a></li>
+            </ul>
+        </nav>
+
+    </div>
+
+    <!--the first virtual page of the webpage consists of a heading title and introductory text-->
+    <div class="page" id="landing">
+
+        <div class="landing-header">
+            <br />
+            <h1>Welcome to</h1>
+            <h1 id="landing-title">Faiyaz's Universal Transportation!</h1>
+        </div>
+
+        <div class="landing-text">
+            <center>
+                <p>
+                    Do you need a quick ride to the other side of the world? Are you too low on cash for the usual airplanes
+                    that can cost you hundreds? Are you in dire need of an unforgettable vacation? <br /><b>Say no more!</b> <br />
+                    With Faiyaz's Universal Transportation, you can go anywhere for the most unbelievable prices!
+                    We have all sorts of means of transportation incuding methods by air, land, water, and even space!
+                </p>
+            </center>
+        </div>
+
+    </div>
+
+    <!--the second virtual page consists of 3 sections that each consist of an image and text
+    each section is further split into 2 sections, the left half has an image and caption
+    the right half has the title of the section and the corresponding text-->
+    <div id="informational-page">
+
+        <!--the first section is about air travel, the left section has an image of a plane-->
+        <div class="page" id="air-travel-section">
+
+            <div class="section-leftside">
+                <img src="../images/militaryplane.jpg" />
+                <div class="clear"></div>
+                <div class="caption">Our most powerful plane!</div>
+            </div>
+
+            <div class="section-rightside" id="air-right">
+                <h2 id="air-travel">Air Travel</h2>
+                <p id="air-text">
+                    Need a flight? We have you covered! Faiyaz's Universal Transportation supplies some of the fastest air transportation in the world!
+                    Our airplanes range from the typical fun helicopter to the type of stuff driven by the Wright Brothers themselves.
+                    We even stole the most industrial planes from militaries too, as seen as on the left,
+                    so you are guaranteed a flight anywhere! We don't even
+                    use airports. Every flight at Faiyaz's Universal Transportation is a direct flight to your destination!
+                </p>
+            </div>
+
+        </div>
+
+        <div class="clear"></div>
+
+        <!--the second section is about land travel, the left section has an image of a car-->
+        <div class="page" id="land-travel-section">
+
+            <div class="section-leftside">
+                <img src="../images/vision.jpg" />
+                <div class="clear"></div>
+                <div class="caption">Our own Mercedes Vision!</div>
+            </div>
+
+            <div class="section-rightside" id="land-right">
+                <h2 id="land-travel">Land Travel</h2>
+                <p id="land-text">
+                    Need a ride across the country? We have you covered! Faiyaz's Universal Transportation has acquired one of the biggest collections
+                    of vehicles on the planet! We even acquired the prototypes of unreleased cars from the biggest brands in the market,
+                    so you can ride in style. All our rides are guaranteed to get you straight to your desination with no delays. All
+                    our drivers have undergone the most intense trainings. Point to a map and you can know we'll get you there in no time
+                    at all!
+                </p>
+            </div>
+
+        </div>
+
+        <div class="clear"></div>
+
+        <!--the third section is about space travel, the left section has an image of a spaceship-->
+        <div class="page" id="space-travel-section">
+
+            <div class="section-leftside">
+                <img src="../images/spaceship.jpg" />
+                <div class="clear"></div>
+                <div class="caption">Our largest spaceship!</div>
+            </div>
+
+            <div class="section-rightside" id="space-right">
+                <h2 id="space-travel">Space Travel</h2>
+                <p id="space-text">
+                    Need a break from Earth? We have you covered! Faiyaz's Universal Transportation has spent years building some of the
+                    most powerful space ships for traveling the vast universe outside our planet's atmosphere. We even have a large collection of
+                    ships that look exactly like the ones you've seen in your favorite science fiction films! All you have to do is pick a ship,
+                    pick a length of time, give us the payment, and we'll take you on a trip out of this world!
+                </p>
+            </div>
+
+        </div>
+
+        <div class="clear"></div>
+
+    </div>
+
+    <!--in the next page, a form is created using html5's control features,
+        the form consists of 10 questions for the visitor of the page to enter information,
+        the form is split into 2 halves, the left side has the first 6 questions and the right has the rest,
+        the halves stack on top of each other in a smaller screen-->
+    <div class="page" id="form-page">
+
+        <h3 id="form-heading">MAKE THE TRIP OF YOUR LIFETIME HERE:</h3>
+
+
+        <!-- Professor Pascucci says that the use of a responsive table in the labs.html file can be
+            counted as credit for the responsive table in the single responsive web page form-->
+        <form id="form1" method="post" action="http://cis-iis2.temple.edu/users/pascucci/cis3342/FormProcessor.aspx?mail=tuk45258@temple.edu">
+
+            <!--this is the first half of the questions-->
+            <div class="form-left">
+                <label id="question" for="name">1. Planner's Name:</label>
+                <br />
+                <input name="txtName" type="text" required="" placeholder="Name">
+                <br />
+                <br />
+
+                <label id="question" for="email">2. Planner's Email Address:</label>
+                <br />
+                <input name="txtEmail" type="email" required="" placeholder="Email">
+                <br />
+                <br />
+
+                <label id="question" for="phone">3. Planner's Phone Number: </label>
+                <br />
+                <input name="txtPhone" type="tel" required="" placeholder="Phone" />
+                <br />
+                <br />
+
+                <label id="question" for="destination">4. What is your destination?</label>
+                <br />
+                <input name="txtDestination" type="text" required="" placeholder="Destination" />
+                <br />
+                <br />
+
+                <label id="question" for="peopleCount">5. How many people in this trip? (Max 10)</label>
+                <br />
+                <input name="txtPeopleCount" type="number" min="1" max="10" step="1" value="1" />
+                <br />
+                <br />
+
+                <label id="question" for="tripLength">6. How long will this trip be?</label>
+                <br />
+                <select>
+                    <option value="length1">One day</option>
+                    <option value="length2">Less than one week</option>
+                    <option value="length3">Less than one month</option>
+                    <option value="length4">Less than six months</option>
+                    <option value="length5">Less than one year</option>
+                </select>
+                <br />
+                <br />
+            </div>
+
+            <!--this is the second half of questions-->
+            <div class="form-right">
+
+                <label id="question" for="travelMethod">7. How do you want to travel?</label>
+                <br />
+                <input name="radTravel" type="radio" value="Air" />
+                <label for="Air">Air</label><br />
+                <input name="radTravel" type="radio" value="Land" />
+                <label for="Land">Land</label><br />
+                <input name="radTravel" type="radio" value="Water" />
+                <label for="Water">Water</label><br />
+                <input name="radTravel" type="radio" value="Space" />
+                <label for="Space">Space</label>
+                <br />
+                <br />
+
+                <label id="question" for="chkAccomodations">8. What accomodations do you want on the trip?</label>
+                <br />
+                <input name="food" type="checkbox" /><label for="food">Food</label><br />
+                <input name="drinks" type="checkbox" /><label for="drinks">Drinks</label><br />
+                <input name="music" type="checkbox" /><label for="music">Music</label><br />
+                <input name="spa" type="checkbox" /><label for="spa">Spa</label><br />
+                <input name="tourguide" type="checkbox" /><label for="tourguide">Tour-Guide</label><br />
+                <br />
+
+                <label id="question" for="returnRide">9. Do you want a return ride?</label>
+                <br />
+                <input name="radReturn" type="radio" value="Yes" />
+                <label for="Yes">Yes</label>
+                <input name="radReturn" type="radio" value="No" />
+                <label for="No">No</label>
+                <br />
+                <br />
+
+                <label id="question" for="date">10. When do you want your trip?</label>
+                <br />
+                <input name="txtDate" type="date" required="" />
+                <br />
+                <br />
+            </div>
+
+            <div class="clear"></div>
+
+            <!--there is a button here for the user to click to submit the information-->
+            <div class="submit-btn">
+                <p>We will contact you with total costs and transportation info</p>
+                <p>Click here to submit the form</p>
+                <input type="submit" value="Submit" />
+            </div>
+
+        </form>
+
+    </div>
+
+    <!--final page consists of a photo gallery
+    there are two rows of photos, each has 3 columns in it
+    the photos all stack on top of one another on smaller screens-->
+    <div class="page" id="photo-gallery">
+
+        <h2 id="gallery-title">
+            SOME OF OUR MOST POPULAR DESTINATIONS
+        </h2>
+
+        <div class="row">
+
+            <div class="column">
+                <img src="../images/india.jpg" alt="Taj mahal" style="width:100%" />
+                <br />
+                Taj Mahal
+            </div>
+            <div class="column">
+                <img src="../images/japan.jpg" alt="Japan" style="width:100%" />
+                <br />
+                Tokyo
+            </div>
+            <div class="column">
+                <img src="../images/colosseum.jpg" alt="Colosseum" style="width:100%">
+                <br />
+                Rome
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="column">
+                <img src="../images/atlantis.jpg" alt="Atlantis" style="width:100%">
+                <br />
+                Atlantis
+            </div>
+            <div class="column">
+                <img src="../images/egypt.jpg" alt="Egypt" style="width:100%">
+                <br />
+                Ancient Egypt
+            </div>
+            <div class="column">
+                <img src="../images/mars.jpg" alt="Mars" style="width:100%">
+                Mars
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--footer at the end of the page-->
+    <footer>Faiyaz's Universal Transportation - 2022 - tuk45258@temple.edu</footer>
+
+</body>
+</html>
